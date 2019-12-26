@@ -27,7 +27,7 @@ function App() {
   const consultarApiInfo = async () =>{
     if(artista){
       const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`;
-      const restulado = await axios(url);
+      const restulado = await axios(url);d
       
       agregarinfo(restulado.data.artists[0]);
       //console.log(info);
